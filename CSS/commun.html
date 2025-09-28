@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Page d'exemple avec votre CSS</title>
+<style>
+/* Vos styles CSS fournis */
+
+.Bandeau {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.theme_bg-claire {
+  background-color: #f0f0f0;
+}
+
+.theme_bg-foncee {
+  background-color: #333;
+  color: #fff;
+}
+
+.theme_bg-neutre-moyen2 {
+  background-color: #999;
+  color: #fff;
+}
+
+.ie-titre {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.ie-titre-couleur {
+  font-size: 1.5rem;
+  color: #0055aa;
+}
+
+.Lien {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.Lien:hover {
+  background-color: #ddd;
+}
+
+.LienAccueil {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.LienWidget {
+  font-style: italic;
+  color: #006600;
+}
+
+.LienLouvre {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #cc0000;
+}
+
+.main-wrapper {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.zone-filtres {
+  background-color: #eef;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.field-contain {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.searh {
+  display: flex;
+  align-items: center;
+}
+
+.searh label {
+  margin-right: 1rem;
+}
+
+.ie-texte {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.liste-recap {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.liste-recap ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.liste-recap li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.liste-recap li:last-child {
+  border-bottom: none;
+}
+
+.flex-contain {
+  display: flex;
+  gap: 1rem;
+}
+
+.Bouton {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.Bouton:hover {
+  filter: brightness(85%);
+}
+
+.Image_Menu_FlecheSousOnglet {
+  width: 50px;
+  height: 50px;
+  background-image: url('https://via.placeholder.com/50');
+  background-size: cover;
+  display: inline-block;
+  margin: 1rem 0;
+}
+
+.Circular {
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.Horizontale {
+  display: flex;
+  align-items: center;
+}
+
+.Vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.TexteAlignementGauche {
+  text-align: left;
+}
+
+.TexteAlignementDroite {
+  text-align: right;
+}
+
+.TexteAlignementCentre {
+  text-align: center;
+}
+
+.TexteAlignementJustifie {
+  text-align: justify;
+}
+
+.TexteAlignementGauche, .TexteAlignementDroite, .TexteAlignementCentre, .TexteAlignementJustifie {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  margin: 1rem 0;
+}
+
+.taille13 {
+  font-size: 13px;
+}
+
+.taille15 {
+  font-size: 15px;
+}
+
+.taille17 {
+  font-size: 17px;
+}
+
+.taille19 {
+  font-size: 19px;
+}
+
+.taille21 {
+  font-size: 21px;
+}
+
+.taille23 {
+  font-size: 23px;
+}
+
+.taille25 {
+  font-size: 25px;
+}
+
+.taille27 {
+  font-size: 27px;
+}
+
+.taille29 {
+  font-size: 29px;
+}
+
+.taille31 {
+  font-size: 31px;
+}
+
+.taille33 {
+  font-size: 33px;
+}
+
+.taille35 {
+  font-size: 35px;
+}
+
+.sansSerif {
+  font-family: Arial, sans-serif;
+}
+
+.serif {
+  font-family: Georgia, serif;
+}
+
+.cursive {
+  font-family: 'Brush Script MT', cursive;
+}
+
+.impact {
+  font-family: Impact, Charcoal, sans-serif;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.souligne {
+  border-bottom: 2px solid #000;
+  padding-bottom: 0.5rem;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.underlinebold {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.italicbold {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.MettreEnValeur {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.MettreEnValeur2 {
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #c00;
+}
+
+.underline2 {
+  text-decoration: underline;
+  color: #0066cc;
+}
+
+.underline3 {
+  text-decoration: underline;
+  color: #009900;
+}
+
+.underline4 {
+  text-decoration: underline;
+  color: #660099;
+}
+
+.underline5 {
+  text-decoration: underline;
+  color: #990000;
+}
+
+.underline6 {
+  text-decoration: underline;
+  color: #666666;
+}
+
+.underline7 {
+  text-decoration: underline;
+  color: #ff6600;
+}
+
+.titre {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+</style>
+</head>
+<body>
+
+<header class="Bandeau theme_bg-claire">
+  <h1 class="ie-titre">Exemple de Page</h1>
+  <a href="#" class="Lien LienAccueil" title="Accueil">Accueil</a>
+</header>
+
+<main class="main-wrapper">
+
+  <!-- Zone filtres -->
+  <section class="zone-filtres">
+    <h2 class="ie-titre-couleur">Filtres</h2>
+    <div class="field-contain searh">
+      <label for="search">Rechercher :</label>
+      <input type="text" id="search" placeholder="Tapez votre recherche" class="ie-texte" />
+    </div>
+  </section>
+
+  <!-- Liste récap -->
+  <section class="liste-recap">
+    <h2 class="titre">Liste Récapitulative</h2>
+    <ul>
+      <li>
+        <label class="MettreEnValeur">Item 1</label>
+        <span class="taille15">Valeur 1</span>
+      </li>
+      <li>
+        <label class="MettreEnValeur2">Item 2</label>
+        <span class="taille17">Valeur 2</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Boutons -->
+  <section class="flex-contain">
+    <button class="Bouton theme_bg-neutre-moyen2">Bouton 1</button>
+    <a href="#" class="Bouton theme_bg-foncee">Lien Bouton</a>
+  </section>
+
+  <!-- Images et icônes -->
+  <section style="margin-top:2rem;">
+    <div class="Image_Menu_FlecheSousOnglet"></div>
+    <div class="Circular" style="width:50px; height:50px; background-color:#555; margin-top:1rem;"></div>
+  </section>
+
+  <!-- Alignements -->
+  <section>
+    <div class="TexteAlignementGauche">
+      <p>Texte aligné à gauche</p>
+    </div>
+    <div class="TexteAlignementDroite">
+      <p>Texte aligné à droite</p>
+    </div>
+    <div class="TexteAlignementCentre">
+      <p>Texte centré</p>
+    </div>
+    <div class="TexteAlignementJustifie">
+      <p>Texte justifié, avec beaucoup de contenu pour voir l'effet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </section>
+
+  <!-- tailles de police -->
+  <section style="margin-top:2rem;">
+    <p class="taille13">Texte taille 13px</p>
+    <p class="taille15">Texte taille 15px</p>
+    <p class="taille17">Texte taille 17px</p>
+    <p class="taille19">Texte taille 19px</p>
+    <p class="taille21">Texte taille 21px</p>
+    <p class="taille23">Texte taille 23px</p>
+    <p class="taille25">Texte taille 25px</p>
+    <p class="taille27">Texte taille 27px</p>
+    <p class="taille29">Texte taille 29px</p>
+    <p class="taille31">Texte taille 31px</p>
+    <p class="taille33">Texte taille 33px</p>
+    <p class="taille35">Texte taille 35px</p>
+  </section>
+
+  <!-- Font families -->
+  <section style="margin-top:2rem;">
+    <p class="sansSerif">Texte en Arial, sans-serif</p>
+    <p class="serif">Texte en Georgia, serif</p>
+    <p class="cursive">Texte en cursive</p>
+    <p class="impact">Texte en Impact</p>
+  </section>
+
+  <!-- Styles de texte -->
+  <section style="margin-top:2rem;">
+    <p class="underline">Texte souligné</p>
+    <p class="souligne">Sous-ligné</p>
+    <p class="italic">Texte en italique</p>
+    <p class="bold">Texte en gras</p>
+    <p class="underlinebold">Souligné et gras</p>
+    <p class="italicbold">Italique et gras</p>
+  </section>
+
+  <!-- Mise en valeur -->
+  <section style="margin-top:2rem;">
+    <p class="MettreEnValeur">Texte en valeur</p>
+    <p class="MettreEnValeur2">Texte en valeur 2</p>
+  </section>
+
+  <!-- Soulignement avec couleur -->
+  <section style="margin-top:2rem;">
+    <p class="underline2">Underline 2</p>
+    <p class="underline3">Underline 3</p>
+    <p class="underline4">Underline 4</p>
+    <p class="underline5">Underline 5</p>
+    <p class="underline6">Underline 6</p>
+    <p class="underline7">Underline 7</p>
+  </section>
+
+</main>
+
+<!-- Pied de page -->
+<footer class="footer theme_bg-claire" style="margin-top:2rem; padding:1rem; text-align:center;">
+  <a href="#" class="LienLouvre" title="Louvre">Lien vers Louvre</a>
+</footer>
+
+</body>
+</html>
